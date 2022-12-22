@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.preview{
+    display: block;
+    flex-flow: column;
+    background-color: rgb(199, 198, 198);
+    width: 800px;
+    min-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+p{
+    margin-left: 40px;
+    padding-top: 15px;
+}
+.tableStyle{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.twoButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.buttonEdit{
+    width: 60px;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+.buttonStyle{
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: rgb(39, 39, 247);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.styleContent, .editContent{
+    display: none;
+}
+.colors{
+    display: none;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: end;
+    width: 240px;
+    height: 240px;
+}
+.editContent{
+    background-color: rgb(199, 198, 198);
+    width: 800px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.styleContent{
+    background-color: rgb(199, 198, 198);
+    width: 800px;
+    min-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px; 
+}
+.styleContent_left{
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    height: 100%;
+    margin-left: 20px;
+    padding-top:20px;
+}
+.editContent__left{
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.addButton{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius:5px;
+    color: white;
+}
+.saveButton{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;  
+    background-color: green;
+    border: none;
+    border-radius:5px;  
+    color: white;
+}
+.backgroundColors{
+    display: none;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: end;
+    width: 240px;
+    height: 240px; 
+}
+.colorButton{
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.backButton{
+    width: 130px;
+    height: 30px;
+    background-color: gray;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    font-family:none;
+}
+.createMenu{
+    display: none;
+    flex-flow: column;
+    background-color: rgb(199, 198, 198);
+    width: 800px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.textMenu{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.forms{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.createMenu__forms{
+    display: none;
+    flex-flow: column;
+    margin-top: 20px;
+}
+#tr{
+    margin-left: 50px;
+    width: 620px;
+    height: 25px;
+    border-radius:5px;
+}
+.createMenu__forms__text1{
+    font-size: 17px;
+}
+.createMenu__forms__text2{
+    font-size: 17px;
+    margin-top: 20px;
+}
+#td{
+    margin-left: 50px;
+    width: 620px;
+    height: 25px;
+    border-radius:5px;
+    margin-top: 20px;
+}
+.createMenu__forms__title{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+#wtd{
+    width: 620px;
+    height: 25px;
+    border-radius:5px;
+    margin-top: 10px;  
+    margin-left: 40px;
+}
+#htd{
+    width: 620px;
+    height: 25px;
+    border-radius:5px;
+    margin-top: 20px;  
+    margin-left: 35px;
+}
+#wb{
+    width: 80px;
+    height: 25px;
+    border-radius:5px;
+    margin-top: 20px;   
+    margin-left: 18px;
+    margin-right: 55px;
+}
+#tb{
+    width: 80px;
+    height: 30px;
+    border-radius:5px;
+    margin-top: 20px;   
+    margin-left: 20px;
+    margin-right: 62px;
+}
+#cb{
+    width: 80px;
+    height: 30px;
+    border-radius:5px;
+    margin-top: 20px;   
+    margin-left: 20px;
+}
+.createTable{
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: rgb(8, 109, 8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.createList{
+    display: none;
+    flex-flow: column;
+    margin-top: 20px; 
+}
+.createList__text{
+    font-size: 17px;
+}
+#cl{
+    width: 600px;
+    height: 25px; 
+    border-radius:5px;
+    margin-left: 60px;
+}
+#tm{
+    width: 605px;
+    height: 30px; 
+    border-radius:5px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.buttonList{
+    width: 100px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: rgb(8, 109, 8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.listStyle{
+    margin-left: 40px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}

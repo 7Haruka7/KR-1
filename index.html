@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="preview">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="twoButtons">
+        <button onclick="onEdit()" class="buttonEdit">edit</button>
+        <button onclick="onStyle()" class="buttonStyle">style</button>
+    </div>
+    <div>
+        <div class="editContent">
+            <div class="editContent__left">
+                <textarea id="textarea" cols="100" rows="10"></textarea>
+                <div>
+                    <button onclick="onAdd()" class="addButton">add</button>
+                    <button onclick="onSave()" class="saveButton">save</button>
+                </div>
+            </div>
+        </div>
+        <div class="styleContent">
+            <div class="styleContent_left">
+                <label>Font Size:</label>
+                <form name="f1">
+                    <input type="radio" name="radio" id="" value="12px">12px
+                    <input type="radio" name="radio" id="" value="14px">14px
+                    <input type="radio" name="radio" id="" value="16px">16px
+                    <input type="radio" name="radio" id="" value="18px">18px
+                    <input type="radio" name="radio" id="" value="20px">20px
+                </form>
+                <label>Font Family:</label>
+                <select id="FTSelect" onchange="onFontTypeChange()">
+                    <option value="choose" selected>Choose option</option>
+                    <option value="cursive">cursive</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sans-serif">sans-serif</option>
+                </select>
+                <label>Colors:</label>
+                <div>
+                    <button onclick="onChangeColor()" class="colorButton">Color of Text</button>
+                    <button onclick="onChangeBGColor()" class="backButton">Background color</button>
+                </div>
+                <label>Style:</label>
+                <form name="f2">
+                    <input type="checkbox" name="boldText" id="bold">Bold Text
+                    <input type="checkbox" name="cursiveText" id="cursive">Cursive Text
+                </form>
+            </div>
+            
+            <div class="colors">
+                <div style="background-color: red; width: 80px; height: 80px; color: red;" value="red"></div>
+                <div style="background-color: blue; width: 80px; height: 80px; color: blue;" value="blue"></div>
+                <div style="background-color: green; width: 80px; height: 80px ;color: green;" value="green"></div>
+                <div style="background-color: black; width: 80px; height: 80px;color: black;" value="black"></div>
+                <div style="background-color: yellow; width: 80px; height: 80px;color: yellow;" value="yellow"></div>
+                <div style="background-color: rgb(174, 42, 64); width:80px; height: 80px;color: rgb(174, 42, 64);" value="pink"></div>
+                <div style="background-color: white; width: 80px; height:80px;color: white;" value="white"></div>
+                <div style="background-color: purple; width: 80px; height: 80px; color: purple;" value="purple"></div>
+                <div style="background-color: skyblue; width: 80px; height: 80px; color: skyblue;" value="skyblue"></div>
+            </div>
+            <div class="backgroundColors">
+                <div style="background-color: red; width: 80px; height: 80px;" value="red"></div>
+                <div style="background-color: blue; width: 80px; height: 80px;" value="blue"></div>
+                <div style="background-color: green; width: 80px; height: 80px;" value="green"></div>
+                <div style="background-color: black; width: 80px; height: 80px;" value="black"></div>
+                <div style="background-color: yellow; width: 80px; height: 80px;" value="yellow"></div>
+                <div style="background-color: rgb(174, 42, 64); width:80px; height: 80px;" value="pink"></div>
+                <div style="background-color: white; width: 80px; height:80px;" value="white"></div>
+                <div style="background-color: purple; width: 80px; height: 80px;" value="purple"></div>
+                <div style="background-color: skyblue; width: 80px; height: 80px;" value="skyblue"></div>
+            </div>
+        </div>
+    </div>
+    <div class="createMenu">
+        <label class="textMenu">Choose what you want:</label>
+        <div class="forms">
+            <form name="f3">
+                <input type="radio" name="radio" id="table">table
+                <input type="radio" name="radio" id="list">list
+            </form>
+            <div class="createMenu__forms">
+                <form name="f4">
+                    <label class="createMenu__forms__text1">Count TR:</label>
+                    <input type="text" name="tr" id="tr" placeholder="Count TR:">
+                </form>
+                <form name="f5">
+                    <label class="createMenu__forms__text2">Count TD:</label>
+                    <input type="text" name="td" id="td" placeholder="Count TD:">
+                </form>
+                <label class="createMenu__forms__title">Add style to your table:</label>
+                <form name="f6">
+                    <label>Width of TD:</label>
+                    <input type="text" name="wtd" id="wtd" placeholder="Width of TD:">
+                </form>
+                <form name="f7">
+                    <label>Height of TD:</label>
+                    <input type="text" name="htd" id="htd" placeholder="Height of TD:">
+                </form>
+                <form name="f8">
+                    <label>Width of border:</label>
+                    <input type="text" name="wb" id="wb" placeholder="Width:">
+                    <label>Type of border:</label>
+                    <select id="tb">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="double">double</option> 
+                    </select>
+                    <label>Color of border:</label>
+                    <select id="cb">
+                        <option value="black">black</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                    </select>
+                </form>
+                <button onclick="onCreateTable()" class="createTable">Create table</button>
+            </div>
+            <div class="createList">
+                <form name="f9">
+                    <label class="createList__text">Count Li:</label>
+                    <input type="text" name="cl" id="cl" placeholder="Count Li:">
+                </form>
+                <form name="f10">
+                    <label class="createList__text">Type of marks:</label>
+                    <select id="tm">
+                        <option value="circle">circle</option>
+                        <option value="disk">disk</option>
+                        <option value="square">square</option>
+                    </select>
+                </form>
+                <button onclick="onCreateList()" class="buttonList">Create list</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
